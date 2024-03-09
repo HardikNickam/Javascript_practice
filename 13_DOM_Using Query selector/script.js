@@ -21,7 +21,38 @@ console.log(body.innerHTML);  //retruned string which is our actual code
 // body1.innerHTML="<p>Hello From Paragraph</p>"
 //querySelectorALL
 
-//Query selector using id
+//Query selector using id (#)
+
+
+const username = document.querySelector("#username");
+console.log(username.innerText) ;
+
+username.innerText = " Bond James Bond"
+
+
+
+//Query selector using class  (.)
+
+
+
+
+// accessing child nodes and parent node
+const ele = document.querySelector("div");
+// console.log(ele.innerHTML);
+
+
+//child node
+console.log(ele.children);
+console.log(ele.parentNode.children)
+
+
+const element = document.querySelectorAll(".block")
+element.forEach((e) => {
+    console.log(e.innerHTML)
+})
+
+
+
 
 
 const all = document.querySelector("code");
